@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(116, 167, 233), rgb(24, 60, 139));
+    color: white;
+    font-family: sans-serif;
+}
+
+body.warm{
+    background: linear-gradient(rgb(253, 195, 86), rgb(95, 2, 2));
+}
+
+.location{
+    height: 20vh;
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
+
+.icon{
+    height: 15vh;
+}
+
+.temperature{
+    height: 15vh;
+    font-size: 2rem;
+}
+
+.summary{
+    height: 20vh;
+    font-size: 1.75rem;
+}
+
+#wicon{
+    width: 100px;
+}
