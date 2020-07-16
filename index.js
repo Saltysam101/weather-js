@@ -29,7 +29,7 @@ window.addEventListener('load', () => {
                     let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
                     console.log(iconurl)
                     img.setAttribute("src", iconurl)
-                    if(data.main.temp > 85){
+                    if(data.main.temp >= 85){
                         body.classList.toggle('warm')
                     }
                     
