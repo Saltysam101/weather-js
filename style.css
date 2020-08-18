@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 200vh;
     background: linear-gradient(rgb(116, 167, 233), rgb(24, 60, 139));
     color: white;
     font-family: sans-serif;
