@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 150vh;
     background: linear-gradient(rgb(116, 167, 233), rgb(24, 60, 139));
     color: white;
     font-family: sans-serif;
@@ -143,6 +143,7 @@ body.warm{
     }
 
     .forecast-container{
+        height: 75vh;
         margin-bottom: 100px;
     }
 
