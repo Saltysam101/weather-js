@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <title>Current Weather</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
@@ -19,6 +19,36 @@
     </div>
 
     <div class="summary"></div>
+
+    <div class="forecast-container">
+        <h2 class="title">Forecast</h2>
+        <div class="forecast">
+            <div class="today">
+                <h2 class="date"></h2>
+                <img class="forecast-img" src="" alt="">
+                <h3 class="forecast-description"></h3>
+                <h3 class="max-temp"></h3>
+                <h3 class="feels-like"></h3>
+                <h3 class="min-temp"></h3>
+            </div>
+            <div class="tomorrow">
+                <h2 class="tom-date"></h2>
+                <img class="tom-forecast-img" src="" alt="">
+                <h3 class="tom-forecast-description"></h3>
+                <h3 class="tom-max-temp"></h3>
+                <h3 class="tom-feels-like"></h3>
+                <h3 class="tom-min-temp"></h3>
+            </div>
+            <div class="day-after-tomorrow">
+                <h2 class="dat-date"></h2>
+                <img class="dat-forecast-img" src="" alt="">
+                <h3 class="dat-forecast-description"></h3>
+                <h3 class="dat-max-temp"></h3>
+                <h3 class="dat-feels-like"></h3>
+                <h3 class="dat-min-temp"></h3>
+            </div>
+        </div>
+    </div>
 
 
     <script src="index.js"></script>

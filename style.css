@@ -43,3 +43,122 @@ body.warm{
 #wicon{
     width: 100px;
 }
+
+.forecast-container{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.forecast{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.title{
+    margin-bottom: 60px;
+}
+
+/*today*/
+
+.forecast-img{
+    margin-top: 5px;
+}
+
+.forecast-description{
+    margin-bottom: 10px;
+}
+
+.max-temp{
+    margin: 5px auto;
+}
+
+.min-temp{
+    margin: 5px auto;
+}
+
+.feels-like{
+    margin: 5px auto;
+}
+
+/*tomorrow*/
+
+.tom-forecast-img{
+    margin-top: 5px;
+}
+
+.tom-forecast-description{
+    margin-bottom: 10px;
+}
+
+.tom-max-temp{
+    margin: 5px auto;
+}
+
+.tom-min-temp{
+    margin: 5px auto;
+}
+
+.tom-feels-like{
+    margin: 5px auto;
+}
+
+/*day after tomorrow*/
+
+.dat-forecast-img{
+    margin-top: 5px;
+}
+
+.dat-forecast-description{
+    margin-bottom: 10px;
+}
+
+.dat-max-temp{
+    margin: 5px auto;
+}
+
+.dat-min-temp{
+    margin: 5px auto;
+}
+
+.dat-feels-like{
+    margin: 5px auto;
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 768px) {
+
+    .location{
+        margin-top: 125px;
+    }
+
+    .forecast{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forecast-container{
+        margin-bottom: 100px;
+    }
+
+    .today{
+        margin-top: 25px;
+    }
+
+    .tomorrow{
+        margin-top: 25px;
+    }
+
+    .day-after-tomorrow{
+        margin-top: 25px;
+    }
+
+    .title{
+        margin-top: 50px;
+    }
+}
