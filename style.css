@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200vh;
+    height: 150vh;
     background: linear-gradient(rgb(116, 167, 233), rgb(24, 60, 139));
     color: white;
     font-family: sans-serif;
@@ -131,6 +131,9 @@ body.warm{
 
 @media only screen and (max-width: 768px) {
 
+    body{
+        height: 200vh;
+    }
     .location{
         margin-top: 125px;
     }
