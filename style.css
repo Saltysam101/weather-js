@@ -5,18 +5,25 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150vh;
+    height: 100vh;
     background: linear-gradient(rgb(116, 167, 233), rgb(24, 60, 139));
     color: white;
     font-family: sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 body.warm{
     background: linear-gradient(rgb(253, 195, 86), rgb(95, 2, 2));
+}
+
+.current-weather{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 50px;
+    width: 20%;
 }
 
 .location{
@@ -24,20 +31,24 @@ body.warm{
     margin-top: 30px;
     font-size: 2.5rem;
     text-align: center;
+    margin: 0 auto;
 }
 
 .icon{
     height: 15vh;
+    margin: 0 auto;
 }
 
 .temperature{
     height: 15vh;
     font-size: 2rem;
+    margin: 0 auto;
 }
 
 .summary{
     height: 20vh;
     font-size: 1.75rem;
+    margin: 0 auto;
 }
 
 #wicon{
@@ -45,7 +56,7 @@ body.warm{
 }
 
 .forecast-container{
-    width: 100%;
+    width: 80%;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -59,6 +70,7 @@ body.warm{
 
 .title{
     margin-bottom: 60px;
+    font-size: 1.75rem;
 }
 
 /*today*/
@@ -133,9 +145,20 @@ body.warm{
 
     body{
         height: 200vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .current-weather{
+        margin: 0;
+        width: 80%;
     }
     .location{
         margin-top: 125px;
+    }
+
+    .summary{
+        text-align: center;
     }
 
     .forecast{
