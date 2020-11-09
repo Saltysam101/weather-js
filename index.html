@@ -7,50 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
-    <div class="current-weather">
-        <div class="location">
-            <h2></h2>
-        </div>
-        <div class="icon">
-            <img id="wicon" src="" alt="">
-        </div>
-
-        <div class="temperature">
-            <h2></h2>
-        </div>
-
-        <div class="summary"></div>
+    <div class="header">
+        <h1>Your Weather</h1>
+        <div class="random-message">its cold</div>
     </div>
+    <div class="wrapper">
+        <div class="current-weather">
+            <div class="location">
+                <h2></h2>
+            </div>
+            <div class="icon">
+                <img id="wicon" src="" alt="">
+            </div>
 
-    <div class="forecast-container">
-        <h2 class="title">Forecast</h2>
-        <div class="forecast">
-            <div class="today">
-                <h2 class="date"></h2>
-                <img class="forecast-img" src="" alt="">
-                <h3 class="forecast-description"></h3>
-                <h3 class="max-temp"></h3>
-                <h3 class="feels-like"></h3>
-                <h3 class="min-temp"></h3>
+            <div class="temperature">
+                <h2></h2>
             </div>
-            <div class="tomorrow">
-                <h2 class="tom-date"></h2>
-                <img class="tom-forecast-img" src="" alt="">
-                <h3 class="tom-forecast-description"></h3>
-                <h3 class="tom-max-temp"></h3>
-                <h3 class="tom-feels-like"></h3>
-                <h3 class="tom-min-temp"></h3>
-            </div>
-            <div class="day-after-tomorrow">
-                <h2 class="dat-date"></h2>
-                <img class="dat-forecast-img" src="" alt="">
-                <h3 class="dat-forecast-description"></h3>
-                <h3 class="dat-max-temp"></h3>
-                <h3 class="dat-feels-like"></h3>
-                <h3 class="dat-min-temp"></h3>
-            </div>
+
+            <div class="summary"></div>
         </div>
-    </div>
+
+        <div class="forecast-container">
+            <div class="forecase-title">
+                <h2 class="title">Forecast</h2>
+            </div>
+                <div class="forecast">
+                    <div class="today">
+                        <h2 class="today-date date"></h2>
+                        <img class="forecast-img img" src="" alt="">
+                        <p class="forecast-description desc"></>
+                        <p class="feels-like f-temp"></>
+                    </div>
+                    <div class="tomorrow">
+                        <h2 class="tom-date date"></h2>
+                        <img class="tom-forecast-img img" src="" alt="">
+                        <p class="tom-forecast-description desc"></>
+                        <p class="tom-feels-like f-temp"></>
+                    </div>
+                    <div class="day-after-tomorrow">
+                        <h2 class="dat-date date"></h2>
+                        <img class="dat-forecast-img img" src="" alt="">
+                        <p class="dat-forecast-description desc"></>
+                        <p class="dat-feels-like f-temp"></>
+                    </div>
+                </div>
+        </div>
+    </div>    
 
 
     <script src="index.js"></script>
