@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    alert("Please turn on location for this website to work")
+    /*alert("Please turn on location for this website to work")*/
     let long;
     let lat;
     let randomMessage = document.querySelector('.random-message');
@@ -23,6 +23,10 @@ window.addEventListener('load', () => {
     let datForecastImg = document.querySelector('.dat-forecast-img');
     let datForecastDescription = document.querySelector('.dat-forecast-description');
     let datRealFeel = document.querySelector('.dat-feels-like');
+    let coolMessages = ['It is NOT blazing hot today.', 'It is kinda cool outside.', 'Is the AC on?'];
+    let warmMessages = ['It is definitely NOT cold today.', 'It is toasty outside.', 'Did you forget to turn the oven off?'];
+
+   
     
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position => {
@@ -48,12 +52,17 @@ window.addEventListener('load', () => {
                     if(data.main.temp >= 80){
                         body.classList.toggle('warm')
                         currentContainer.classList.toggle('warm')
-                        randomMessage.classList.toggle('warm')
+                        randomMessage.classList.toggle('cool')
                         forecastContainer.classList.toggle('warm')
+                        randomMessage.innerHTML = warmMessages[Math.floor(Math.random() * 3)]
+                    } else {
+                        randomMessage.innerHTML = coolMessages[Math.floor(Math.random() * 3)]
                     }
 
                     
                 })
+
+                console.log(randomMessage.classList)
 
                 fetch(forecastApi)
                     .then(response => {
