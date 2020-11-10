@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    /*alert("Please turn on location for this website to work")*/
+    alert("Please turn on location for this website to work")
     let long;
     let lat;
     let randomMessage = document.querySelector('.random-message');
