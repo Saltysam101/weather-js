@@ -7,15 +7,10 @@
 /*mobile*/
    
 body{
-    height: 160vh;
-    background: linear-gradient(to bottom right, rgb(117, 150, 255), rgb(0, 35, 133));
     color: black;
     font-family: sans-serif;
 }
 
-body.warm{
-    background: linear-gradient( to bottom right,rgb(255, 117, 117), rgb(133, 0, 45));
-}
 
 .header{
     margin-left: 40px;
@@ -24,7 +19,7 @@ body.warm{
 
 .header h1{
     font-size: 2rem;
-    color: white;
+    color: black;
 }
 
 .header div.cool{
@@ -47,7 +42,7 @@ body.warm{
     height: 200px;
     margin-top: 50px;
     margin-bottom: 75px;
-    background: linear-gradient(to bottom right, rgb(43, 92, 230), rgb(83, 154, 208));
+    background: linear-gradient(to bottom right,rgb(84, 128, 250), rgb(143, 206, 255));
     border-radius: 35px;
     display: flex;
     flex-direction: column;
@@ -76,7 +71,7 @@ body.warm{
     margin: 0 auto;
     width: 260px;
     height: 580px;
-    background: linear-gradient(to bottom right, rgb(43, 92, 230), rgb(83, 154, 208));
+    background: linear-gradient(to bottom right, rgb(84, 128, 250), rgb(143, 206, 255));
     border-radius: 35px;
     display: flex;
     flex-direction: column;
@@ -101,20 +96,67 @@ body.warm{
 
 @media only screen and (min-width: 768px){
 
-    body{
-        height: 110vh;
-    }
+  
     .current-weather{
-        width: 360px;
-        height: 250px;
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .temperature{
+        font-size: 2rem;
+    }
+
+    div #wicon{
+        width: 4rem;
     }
 
     .forecast-container{
-        width: 420px;
+        width: 40rem;
+        margin-bottom: 4rem;
     }
-}
 
-@media only screen and (min-width: 1600px){
+    .forecast{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .today{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .tomorrow{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .day-after-tomorrow{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .datecontainer{
+        width: 45px;
+    }
+    
+    .forecast > div > img{
+        width: 5rem;
+    }
+    
+    .forecast > div > p{
+        width: 8rem;
+        font-size: 1.3rem;
+    }
+
+    .f-temp{
+        font-size: 1.8rem;
+    }
+} 
+
+@media only screen and (min-width: 1200px){
 body{
     height: 100vh;
 }
@@ -128,7 +170,7 @@ body{
 
 .header h1{
     font-size: 2.5rem;
-    color: white;
+    color: black;
 }
 
 .header div{
@@ -143,13 +185,14 @@ body{
 .wrapper{
     height: 90vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .current-weather{
-    margin-left: 50px;
-    width: 430px;
+    margin-left: auto;
+    width: 45rem;
     height: 450px;
 }
 
@@ -175,14 +218,14 @@ body{
 
 .forecast-container{
     text-align: center;
-    width: 1000px;
-    height: 400px;
+    width: 70rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
-    background: linear-gradient(to bottom right, rgb(43, 92, 230), rgb(83, 154, 208));
+    background: linear-gradient(to bottom right, rgb(84, 128, 250), rgb(143, 206, 255));
     border-radius: 35px;
+    margin-bottom: 5rem;
 }
 
 .forecast{
@@ -190,11 +233,13 @@ body{
     display: flex;
     justify-content: space-evenly;
     text-align: left;
+    margin-bottom: 5rem;
+    flex-direction: row;
 }
 
 .title{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 4rem;
+    padding: 3rem;
     font-size: 1.9rem;
 }
 
@@ -209,16 +254,24 @@ body{
 
 .forecast-img{
     margin-top: 5px;
+    width: 5rem;
 }
 
 .forecast-description{
     margin-bottom: 10px;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+}
+
+
+.forecast > div > p{
+    width: 10rem;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 .feels-like{
     margin: 5px auto;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 /*tomorrow*/
@@ -231,16 +284,17 @@ body{
 }
 .tom-forecast-img{
     margin-top: 5px;
+    width: 5rem;
 }
 
 .tom-forecast-description{
     margin-bottom: 10px;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .tom-feels-like{
     margin: 5px auto;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 /*day after tomorrow*/
@@ -254,15 +308,16 @@ body{
 
 .dat-forecast-img{
     margin-top: 5px;
+    width: 5rem;
 }
 
 .dat-forecast-description{
     margin-bottom: 10px;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .dat-feels-like{
     margin: 5px auto;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 }

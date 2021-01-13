@@ -62,17 +62,15 @@ window.addEventListener('load', () => {
                     
                 })
 
-                console.log(randomMessage.classList)
 
                 fetch(forecastApi)
                     .then(response => {
                         return response.json();
                     })
                     .then(data => {
-                        let newDate = new Date;
-                        let day = newDate.getDate() + 1;
-                        let month = newDate.getMonth() + 1;
-                        forecastDate.textContent = month + '/' + day;
+                        let day = new Date();
+                        day.setDate(new Date().getDate() + 1)
+                        forecastDate.textContent = day.toLocaleString('en-us', {  weekday: 'short' });
                         let iconcode = data.list[8].weather[0].icon;
                         let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
                         forecastImg.setAttribute("src", iconurl);
@@ -85,10 +83,9 @@ window.addEventListener('load', () => {
                         return response.json();
                     })
                     .then(data => {
-                        let newDate = new Date;
-                        let day = newDate.getDate() + 2;
-                        let month = newDate.getMonth() + 1;
-                        tomForecastDate.textContent = month + '/' + day;
+                        let day = new Date();
+                        day.setDate(new Date().getDate() + 2)
+                        tomForecastDate.textContent = day.toLocaleString('en-us', {  weekday: 'short' });
                         let iconcode = data.list[16].weather[0].icon;
                         let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
                         tomForecastImg.setAttribute("src", iconurl);
@@ -101,10 +98,9 @@ window.addEventListener('load', () => {
                         return response.json();
                     })
                     .then(data => {
-                        let newDate = new Date;
-                        let day = newDate.getDate() + 3;
-                        let month = newDate.getMonth() + 1;
-                        datForecastDate.textContent = month + '/' + day;
+                        let day = new Date();
+                        day.setDate(new Date().getDate() + 3)
+                        datForecastDate.textContent = day.toLocaleString('en-us', {  weekday: 'short' });
                         let iconcode = data.list[16].weather[0].icon;
                         let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
                         datForecastImg.setAttribute("src", iconurl);
