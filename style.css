@@ -1,73 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 /*mobile*/
-   
-body{
+
+body {
     color: black;
     font-family: sans-serif;
 }
 
-
-.header{
+.header {
     margin-left: 40px;
     margin-top: 30px;
 }
 
-.header h1{
+.header h1 {
     font-size: 2rem;
     color: black;
 }
 
-.header div.cool{
+.header div.cool {
     font-size: 1.6rem;
     color: rgb(255, 170, 0);
 }
 
-.header div{
+.header div {
     color: rgb(0, 128, 255);
     font-size: 1.6rem;
 }
 
-.wrapper{
+.wrapper {
     text-align: center;
+    margin-bottom: 2rem;
+    color: white;
 }
 
-.current-weather{
+.current-weather {
     margin: 0 auto;
     width: 260px;
     height: 200px;
     margin-top: 50px;
     margin-bottom: 75px;
-    background: linear-gradient(to bottom right,rgb(84, 128, 250), rgb(143, 206, 255));
+    background: linear-gradient(to bottom right, rgb(84, 128, 250), rgb(143, 206, 255));
     border-radius: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.current-weather.warm{
+
+.current-weather.warm {
     background: linear-gradient(to bottom right, rgb(230, 43, 43), rgb(208, 141, 83));
 }
 
-.location{
+.location {
     margin: 10px auto;
     font-size: 1.5rem;
 }
 
-.temperature{
+.temperature {
     margin-bottom: 10px;
     font-size: 1.6rem;
 }
 
-.summary{
+.summary {
     font-size: 1.4rem;
 }
 
-.forecast-container{
+.forecast-container {
     margin: 0 auto;
     width: 260px;
     height: 580px;
@@ -78,247 +81,207 @@ body{
     align-items: center;
     justify-content: center;
 }
-.forecast-container.warm{
+
+.forecast-container.warm {
     background: linear-gradient(to bottom right, rgb(230, 43, 43), rgb(208, 141, 83));
 }
 
-.date{
+.date {
     margin: 15px 0;
 }
 
-.desc{
+.desc {
     margin: 10px 0;
 }
 
-.f-temp{
+.f-temp {
     margin: 10px 0;
 }
 
-@media only screen and (min-width: 768px){
-
-  
-    .current-weather{
+@media only screen and (min-width: 768px) {
+    .current-weather {
         width: 20rem;
         height: 15rem;
     }
-
-    .temperature{
+    .temperature {
         font-size: 2rem;
     }
-
-    div #wicon{
+    div #wicon {
         width: 4rem;
     }
-
-    .forecast-container{
+    .forecast-container {
         width: 40rem;
         margin-bottom: 4rem;
     }
-
-    .forecast{
+    .forecast {
         width: 100%;
         height: 90%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-
-    .today{
+    .today {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
     }
-    .tomorrow{
+    .tomorrow {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
     }
-    .day-after-tomorrow{
+    .day-after-tomorrow {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
     }
-    .datecontainer{
+    .datecontainer {
         width: 45px;
     }
-    
-    .forecast > div > img{
+    .forecast>div>img {
         width: 5rem;
     }
-    
-    .forecast > div > p{
+    .forecast>div>p {
         width: 8rem;
         font-size: 1.3rem;
     }
-
-    .f-temp{
+    .f-temp {
         font-size: 1.8rem;
     }
-} 
-
-@media only screen and (min-width: 1200px){
-body{
-    height: 100vh;
 }
 
-
-.header{
-    width: 20%;
-    margin-left: 160px;
-    margin-top: 50px;
-}
-
-.header h1{
-    font-size: 2.5rem;
-    color: black;
-}
-
-.header div{
-    font-size: 1.9rem;
-    color: rgb(255, 170, 0);
-}
-
-.header div.warm{
-    color: rgb(0, 128, 255);
-}
-
-.wrapper{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.current-weather{
-    margin-left: auto;
-    width: 45rem;
-    height: 450px;
-    margin-top: 10rem;
-}
-
-
-.location{
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-
-.temperature{
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.summary{
-    font-size: 1.9rem;
-}
-
-#wicon{
-    width: 100px;
-}
-
-.forecast-container{
-    text-align: center;
-    width: 70rem;
-    height: 25rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(to bottom right, rgb(84, 128, 250), rgb(143, 206, 255));
-    border-radius: 35px;
-    margin-bottom: 5rem;
-}
-
-.forecast{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: left;
-    margin-bottom: 5rem;
-    flex-direction: row;
-}
-
-.title{
-    margin-top: 4rem;
-    padding: 3rem;
-    font-size: 1.9rem;
-}
-
-/*today*/
-
-.today{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-}
-
-.forecast-img{
-    margin-top: 5px;
-    width: 5rem;
-}
-
-.forecast-description{
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-
-.forecast > div > p{
-    width: 10rem;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-.feels-like{
-    margin: 5px auto;
-    font-size: 2.5rem;
-}
-
-/*tomorrow*/
-
-.tomorrow{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-}
-.tom-forecast-img{
-    margin-top: 5px;
-    width: 5rem;
-}
-
-.tom-forecast-description{
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.tom-feels-like{
-    margin: 5px auto;
-    font-size: 2.5rem;
-}
-
-/*day after tomorrow*/
-
-.day-after-tomorrow{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-}
-
-.dat-forecast-img{
-    margin-top: 5px;
-    width: 5rem;
-}
-
-.dat-forecast-description{
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.dat-feels-like{
-    margin: 5px auto;
-    font-size: 2.5rem;
-}
+@media only screen and (min-width: 1200px) {
+    body {
+        height: 100vh;
+    }
+    .header {
+        width: 20%;
+        margin-left: 160px;
+        margin-top: 50px;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+        color: black;
+    }
+    .header div {
+        font-size: 1.9rem;
+        color: rgb(255, 170, 0);
+    }
+    .header div.warm {
+        color: rgb(0, 128, 255);
+    }
+    .wrapper {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .current-weather {
+        margin-left: auto;
+        width: 30rem;
+        height: 450px;
+        margin-top: 10rem;
+        padding: 2rem 0;
+    }
+    .location {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .temperature {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .summary {
+        font-size: 1.9rem;
+    }
+    #wicon {
+        width: 100px;
+    }
+    .forecast-container {
+        text-align: center;
+        width: 70rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(to bottom right, rgb(84, 128, 250), rgb(143, 206, 255));
+        border-radius: 35px;
+        margin-bottom: 5rem;
+    }
+    .forecast {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+        margin-bottom: 5rem;
+        flex-direction: row;
+    }
+    .title {
+        margin-top: 4rem;
+        padding: 3rem;
+        font-size: 1.9rem;
+    }
+    /*today*/
+    .today {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+    .forecast-img {
+        margin-top: 5px;
+        width: 5rem;
+    }
+    .forecast-description {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+    .forecast>div>p {
+        width: 10rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .feels-like {
+        margin: 5px auto;
+        font-size: 2.5rem;
+    }
+    /*tomorrow*/
+    .tomorrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+    .tom-forecast-img {
+        margin-top: 5px;
+        width: 5rem;
+    }
+    .tom-forecast-description {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+    .tom-feels-like {
+        margin: 5px auto;
+        font-size: 2.5rem;
+    }
+    /*day after tomorrow*/
+    .day-after-tomorrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+    .dat-forecast-img {
+        margin-top: 5px;
+        width: 5rem;
+    }
+    .dat-forecast-description {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+    .dat-feels-like {
+        margin: 5px auto;
+        font-size: 2.5rem;
+    }
 }
